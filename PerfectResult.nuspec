@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>PerfectResult</id>
+    <version>1.0.0</version>
+    <authors>Josef Širůčka</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <icon>icon.png</icon>
+    <projectUrl>https://github.com/josefsirucka/PerfectResult</projectUrl>
+    <description>This library offers a standardized way to represent the outcomes of operations, whether successful or failed. It includes both generic and non-generic implementations, allowing for flexibility and robust error handling in your .NET applications.</description>
+    <releaseNotes>Initial Release.</releaseNotes>
+    <copyright>$copyright$</copyright>
+    <tags>Return value result</tags>
+    <dependencies>
+      <group targetFramework=".NET8">
+      </group>
+    </dependencies>
+  </metadata>
+</package>

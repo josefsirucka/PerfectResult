@@ -1,0 +1,6 @@
+C:\BITBUCKET\PerfectResult\PerfectResult.Tests\obj\Debug\net8.0\PerfectResult.Tests.csproj.AssemblyReference.cache
+C:\BITBUCKET\PerfectResult\PerfectResult.Tests\obj\Debug\net8.0\PerfectResult.Tests.GeneratedMSBuildEditorConfig.editorconfig
+C:\BITBUCKET\PerfectResult\PerfectResult.Tests\obj\Debug\net8.0\PerfectResult.Tests.AssemblyInfoInputs.cache
+C:\BITBUCKET\PerfectResult\PerfectResult.Tests\obj\Debug\net8.0\PerfectResult.Tests.AssemblyInfo.cs
+C:\BITBUCKET\PerfectResult\PerfectResult.Tests\obj\Debug\net8.0\PerfectResult.Tests.csproj.CoreCompileInputs.cache
+C:\BITBUCKET\PerfectResult\PerfectResult.Tests\obj\Debug\net8.0\PerfectResult.Tests.sourcelink.json

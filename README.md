@@ -46,6 +46,21 @@ var failure = IResult.FailureResult("Operation failed", new Exception("Error det
 var failureGeneric = IResult.FailureResult<int>("Operation failed", new Exception("Error detail"));
 ```
 
+But the most important is to use as a object from method:
+
+```csharp
+public IResult<MyObject> GetMyObject()
+{
+    if (* something is wrong *)
+    {
+        return IResult.FailureResult("Operation failed", new Exception("MyObject Failed"));
+    }
+    
+    MyObject objectToReturn = new();
+    return IResult.SuccessResult(objectToReturn);
+}
+```
+
 ## Contributing
 
 Contributions to enhance this library are welcome. Please adhere to the following steps:

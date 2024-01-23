@@ -73,8 +73,12 @@ Contributions to enhance this library are welcome. Please adhere to the followin
 
 ## Version History
 
-    0.1
+    1.0.0
         Initial Release.
+    1.0.1
+        Initial Release - fixing the nugget's lib folder.
+    1.0.2
+        Initial Release - fixing the flags and debugging data.
 
 ## Authors
 

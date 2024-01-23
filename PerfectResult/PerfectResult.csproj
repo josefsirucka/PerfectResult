@@ -4,6 +4,9 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <Deterministic>true</Deterministic>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
   </PropertyGroup>
 
 </Project>

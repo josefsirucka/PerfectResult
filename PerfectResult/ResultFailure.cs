@@ -24,7 +24,7 @@ public sealed class FailureResult<T>(string errorMessage, Exception? exception =
     /// <summary>
     /// Gets the value of a failed operation. Always throws an InvalidOperationException when accessed.
     /// </summary>
-    public override T Value => throw new InvalidOperationException("Cannot get value from a failed operation.");
+    public override T Value => throw new InvalidOperationException("Cannot get value from a failed operation - with error message: " + Message);
 
     /// <inheritdoc/>
     public override string Message { get; } = errorMessage;

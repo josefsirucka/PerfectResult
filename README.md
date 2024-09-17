@@ -79,6 +79,8 @@ Contributions to enhance this library are welcome. Please adhere to the followin
         Initial Release - fixing the nugget's lib folder.
     1.0.2
         Initial Release - fixing the flags and debugging data.
+    1.0.3
+        When try to get value from Failed operation, the exception now contains the error message.
 
 ## Authors
 

@@ -1,4 +1,4 @@
-# PerfectResult .NET 8 Result Handling Library
+# PerfectResult .NET 9 Result Handling Library
 ___
 
 A library for elegantly handling operation results, including success and failure scenarios, with support for both generic and non-generic types. Designed for ease of use and integration into .NET projects.
@@ -6,13 +6,6 @@ A library for elegantly handling operation results, including success and failur
 ## Description
 
 This library offers a standardized way to represent the outcomes of operations, whether successful or failed. It includes both generic and non-generic implementations, allowing for flexibility and robust error handling in your .NET applications.
-
-## Getting Started
-
-Dependencies
-
-    .NET 8
-    An IDE like Visual Studio or VS Code for .NET development
 
 ## Installing via NuGet
 

@@ -5,32 +5,78 @@
 
 namespace PerfectResult.Tests;
 
+/// <summary>
+/// This class contains tests for the failing IResult factory methods.
+/// These are the main un-happy scenario tests for the factory methods.
+/// </summary>
 [TestFixture]
-public class FailureResultTests
+public class FailureTests
 {
     [Test]
-    public void FailureResult_WithMessageAndException_ShouldSetProperties()
+    public void GetFailureResultEmptyMessage()
     {
-        var exception = new Exception("Test exception");
-        var result = new FailureResult("Operation failed", exception);
+        IPResult result = FailureResultTemplates.GetFailureResultEmptyMessage();
         Assert.Multiple(() =>
         {
-            Assert.That(result.Success, Is.False);
-            Assert.That(result.Message, Is.EqualTo("Operation failed"));
-            Assert.That(result.Exception, Is.EqualTo(exception));
+            Assert.That(result, Is.InstanceOf<Failure>());
+            Assert.That(result.Message, Is.EqualTo("Operation failed."));
         });
+
+        if (result is Failure failure)
+        {
+            Assert.That(failure.Exception, Is.Not.Null);
+            Assert.That(failure.Exception.Message, Is.EqualTo("A failure occurred, but no exception was provided."));
+        }
     }
 
     [Test]
-    public void FailureResult_WithMessageAndNoException_ShouldSetDefaultException()
+    public void GetFailureResultCustomeMessage()
     {
-        var result = new FailureResult("Operation failed");
+        IPResult result = FailureResultTemplates.GetFailureResultCustomeMessage();
         Assert.Multiple(() =>
         {
-            Assert.That(result.Success, Is.False);
-            Assert.That(result.Message, Is.EqualTo("Operation failed"));
+            Assert.That(result, Is.InstanceOf<Failure>());
+            Assert.That(result.Message, Is.EqualTo("Custom failure message."));
         });
-        Assert.IsNotNull(result.Exception);
-        Assert.That(result.Exception.Message, Is.EqualTo("There was no exception thrown"));
+
+        if (result is Failure failure)
+        {
+            Assert.That(failure.Exception, Is.Not.Null);
+            Assert.That(failure.Exception.Message, Is.EqualTo("A failure occurred, but no exception was provided."));
+        }
+    }
+
+    [Test]
+    public void GetFailureResultWithExceptionEmptyMessage()
+    {
+        IPResult result = FailureResultTemplates.GetFailureResultWithExceptionEmptyMessage();
+        Assert.Multiple(() =>
+        {
+            Assert.That(result, Is.InstanceOf<Failure>());
+            Assert.That(result.Message, Is.EqualTo("Operation failed."));
+        });
+
+        if (result is Failure failure)
+        {
+            Assert.That(failure.Exception, Is.Not.Null);
+            Assert.That(failure.Exception.Message, Is.EqualTo("This is a test exception"));
+        }
+    }
+
+    [Test]
+    public void GetFailureResultWithValueCustomMessage()
+    {
+        IPResult result = FailureResultTemplates.GetFailureResultWithValueCustomMessage();
+        Assert.Multiple(() =>
+        {
+            Assert.That(result, Is.InstanceOf<Failure>());
+            Assert.That(result.Message, Is.EqualTo("Custom failure message."));
+        });
+
+        if (result is Failure failure)
+        {
+            Assert.That(failure.Exception, Is.Not.Null);
+            Assert.That(failure.Exception.Message, Is.EqualTo("This is a test exception"));
+        }
     }
 }

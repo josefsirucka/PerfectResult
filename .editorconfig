@@ -1,0 +1,4 @@
+[*.{cs,vb}]
+
+# I don't like primary constructor syntax
+dotnet_diagnostic.IDE0290.severity = silent

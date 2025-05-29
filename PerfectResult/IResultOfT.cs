@@ -1,4 +1,4 @@
-// <copyright file="IResult.cs" company="Josef Širůčka">
+// <copyright file="IPResult.cs" company="Josef Širůčka">
 // Copyright (c) Josef Širůčka. All rights reserved.
 // </copyright>
 // <summary>Created on: 22.01 2024</summary>
@@ -9,7 +9,7 @@ namespace PerfectResult;
 /// Interface that extends the origin one with T value.
 /// </summary>
 /// <typeparam name="T">Type of Value object.</typeparam>
-public interface IResult<T> : IResult
+public interface IPResult<T> : IPResult
 {
     /// <summary>
     /// Gets a value of the object that is type of T.

@@ -37,9 +37,4 @@ public class SuccessResultTemplates
     {
         return IPResult.SuccessResult(2025, "Custom success message with value.");
     }
-
-    public static IPResult GetFailreResultEmptyMessage()
-    {
-        return IPResult.FailureResult();
-    }
 }

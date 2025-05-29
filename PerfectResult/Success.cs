@@ -5,7 +5,7 @@
 
 namespace PerfectResult;
 
-public class Success : PResult
+public class Success : PResult, ISuccess
 {
     private readonly string? _message;
 

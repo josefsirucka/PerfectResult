@@ -1,4 +1,7 @@
 {
+    "editor.rulers": [
+        100
+    ],
     "workbench.colorCustomizations": {
         "editorWarning.foreground": "#fff52e57",
         "editorError.foreground": "#ff0000",
@@ -16,7 +19,6 @@
         "activityBar.inactiveForeground": "#ffadb9",
         "activityBarBadge.foreground": "#ffadb9",
         "activityBar.activeBackground": "#ffadb9",
-
         "activityBar.foreground": "#7f35ee",
         "activityBarBadge.background": "#774eac",
         /* Main Window Title */
@@ -56,11 +58,4 @@
     "errorLens.delay": 500,
     // icons on left bar
     "errorLens.gutterIconsEnabled": false,
-    // colors setting is in workbench.colorCustomizations section 
-    /* DotNet Test Explorer - not in use anymore (Related to .Net Core Test Explorer Extension)
-    "dotnet-test-explorer.testProjectPath": "PFASuite.UnitTests\\PFASuite.UnitTests.csproj"
-     */
-    "codesnap.backgroundColor": "transparent",
-    "codesnap.boxShadow": "none",
-    "codesnap.containerPadding": "1px",
 }
